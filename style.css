@@ -17,6 +17,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* Cabeçalho */
 header {
   background: radial-gradient(circle, #1a1a1a, #0a0a0a);
   padding: 2rem 1rem;
@@ -38,9 +39,22 @@ h1 {
 }
 
 h2 {
-  margin-top: 2rem;
   color: #8b5cf6;
   text-shadow: 0 0 10px #4f269b;
+  margin-top: 0;
+}
+
+/* Seções com espaçamento consistente */
+section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Seções Flexbox */
+.flexbox-exemplo {
+  border-top: 3px solid #4f269b;
+  padding-top: 0.5rem;
+  overflow: visible;
 }
 
 .personagens {
@@ -90,6 +104,7 @@ h2 {
   border-radius: 8px;
 }
 
+/* Seções Grid */
 .itens {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -113,6 +128,7 @@ h2 {
   box-shadow: 0 0 25px #ff7518;
 }
 
+/* Animação dos morcegos */
 .bat {
   position: absolute;
   top: 20%;
@@ -132,24 +148,16 @@ h2 {
   100% { transform: translateX(240vw) translateY(0) rotate(-10deg); }
 }
 
+/* Rodapé */
 footer {
   background-color: #1a1a1a;
   padding: 1rem;
-  margin-top: 2rem;
   border-top: 3px solid #4f269b;
   text-shadow: 0 0 10px #4f269b;
+  margin-top: 3rem;
 }
 
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
-}
-
+/* Descrição */
 .descricao {
   max-width: 700px;
   margin: 0 auto 1.5rem auto;
@@ -185,4 +193,3 @@ footer {
   from { opacity: 0.6; text-shadow: 0 0 5px #ff7518; }
   to { opacity: 1; text-shadow: 0 0 15px #ffb347; }
 }
-
